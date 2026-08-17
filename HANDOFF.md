@@ -39,4 +39,4 @@ Static microsite, 43 pages, no build step. Deploys on Vercel (repo already conne
 
 ## Status: READY TO LAUNCH
 
-All placeholder/token scans came back clean (no `{{` tokens, no lorem ipsum, no TODO/TBD markers). Contact form, request-a-quote form, and homepage quote form are wired to the CRM proxy with UTM capture. Remaining action item before the first real lead: set `CRM_API_TOKEN` in Vercel, and follow up with QM on the correct `industry`/`questions[]` values if that data should be captured going forward.
+All placeholder/token scans came back clean (no `{{` tokens, no lorem ipsum, no TODO/TBD markers). Contact form, request-a-quote form, and homepage quote form are wired to the CRM proxy with UTM capture. `CRM_API_TOKEN` has been set in Vercel. Follow up with QM on the correct `industry`/`questions[]` values if that data should be captured going forward.
