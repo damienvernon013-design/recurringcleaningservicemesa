@@ -40,3 +40,9 @@ Static microsite, 43 pages, no build step. Deploys on Vercel (repo already conne
 ## Status: READY TO LAUNCH
 
 All placeholder/token scans came back clean (no `{{` tokens, no lorem ipsum, no TODO/TBD markers). Contact form, request-a-quote form, and homepage quote form are wired to the CRM proxy with UTM capture. `CRM_API_TOKEN` has been set in Vercel. Follow up with QM on the correct `industry`/`questions[]` values if that data should be captured going forward.
+
+## CTA destination (updated)
+
+All site CTAs (nav "Request a Quote"/"Get a Quote"/"Contact", `btn-primary`/`btn-white` buttons, inline quote links) now link to `https://teamleadgeneration.com/contact/` instead of the internal `/request-a-quote/` and `/contact/` pages. Phone `tel:` links, canonical tags, sitemap and JSON-LD are unchanged.
+
+The internal `/request-a-quote/` and `/contact/` pages and their CRM-wired forms still exist but receive no on-site link traffic, so lead capture via `/api/submit-lead` and UTM capture is effectively bypassed for CTA clicks. Decide whether to remove those pages/sitemap entries or redirect them.

@@ -25,3 +25,7 @@ Static HTML microsite for a commercial recurring-cleaning business serving Mesa,
 ## Working on the lead form / CRM integration
 
 Read `HANDOFF.md` first — it documents the exact payload shape sent to the CRM, what fields are intentionally omitted (`industry`, `questions[]`) and why, and the required Vercel env var.
+
+## CTA links
+
+Every CTA/nav link to a quote or contact page must point to `https://teamleadgeneration.com/contact/` (not `/request-a-quote/` or `/contact/`). Keep `tel:` links as-is. When adding new pages, copy the header/nav/footer from an existing page so this stays consistent, and grep for `href="/request-a-quote/"` / `href="/contact/"` to catch strays.
